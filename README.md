@@ -11,15 +11,15 @@ This directory is meant to be a practical bench environment for:
 
 ## Visual References
 
-![BLDC motor overview](https://commons.wikimedia.org/wiki/Special:FilePath/EC-Motor.svg)
+![BLDC motor overview](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/EC-Motor.svg/640px-EC-Motor.svg.png)
 
 Source: Wikimedia Commons, public domain. Useful as a quick reminder of the BLDC + electronic commutation model that the ODrive is controlling.
 
-![Bus topology overview](https://commons.wikimedia.org/wiki/Special:FilePath/BusNetwork.svg)
+![Bus topology overview](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/BusNetwork.svg/640px-BusNetwork.svg.png)
 
 Source: Wikimedia Commons, public domain. This is a simple way to visualize the shared CAN bus concept used between the host, adapter, and ODrive nodes.
 
-![Trapezoidal velocity profile](https://commons.wikimedia.org/wiki/Special:FilePath/Jerk%20loi%20mouvement%20vitesse%20trapezoidale.svg)
+![Trapezoidal velocity profile](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jerk_loi_mouvement_vitesse_trapezoidale.svg/500px-Jerk_loi_mouvement_vitesse_trapezoidale.svg.png)
 
 Source: Wikimedia Commons, CC BY-SA 3.0. This helps explain why the current position setup uses trap trajectory instead of a raw position step.
 
@@ -63,7 +63,7 @@ Ginkgo_Odrive/
 ### 1. Create and activate a virtual environment
 
 ```bash
-cd ../Ginkgo_Odrive
+cd /home/gerardo/Projects/Robotics/Ginkgo_Odrive
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
