@@ -1,0 +1,2 @@
+# Standalone GUI dependency for the Ginkgo bench tools.
+PyQt6>=6.6,<7
