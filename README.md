@@ -11,11 +11,11 @@ This directory is meant to be a practical bench environment for:
 
 ## Visual References
 
-![BLDC motor overview](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/EC-Motor.svg/640px-EC-Motor.svg.png)
+![BLDC motor overview](https://commons.wikimedia.org/wiki/Special:FilePath/EC-Motor.svg)
 
 Source: Wikimedia Commons, public domain. Useful as a quick reminder of the BLDC + electronic commutation model that the ODrive is controlling.
 
-![Bus topology overview](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/BusNetwork.svg/640px-BusNetwork.svg.png)
+![Bus topology overview](https://commons.wikimedia.org/wiki/Special:FilePath/BusNetwork.svg)
 
 Source: Wikimedia Commons, public domain. This is a simple way to visualize the shared CAN bus concept used between the host, adapter, and ODrive nodes.
 
