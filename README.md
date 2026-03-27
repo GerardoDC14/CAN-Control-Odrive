@@ -23,8 +23,6 @@ Source: Wikimedia Commons, public domain. This is a simple way to visualize the 
 
 Source: Wikimedia Commons, CC BY-SA 3.0. This helps explain why the current position setup uses trap trajectory instead of a raw position step.
 
-If your Markdown renderer does not display remote SVG images, open the links directly in a browser.
-
 ## Workspace Layout
 
 ```text
