@@ -11,17 +11,19 @@ This directory is meant to be a practical bench environment for:
 
 ## Visual References
 
-![BLDC motor overview](https://commons.wikimedia.org/wiki/Special:FilePath/EC-Motor.svg)
+![BLDC motor overview](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/EC-Motor.svg/640px-EC-Motor.svg.png)
 
 Source: Wikimedia Commons, public domain. Useful as a quick reminder of the BLDC + electronic commutation model that the ODrive is controlling.
 
-![Bus topology overview](https://commons.wikimedia.org/wiki/Special:FilePath/BusNetwork.svg)
+![Bus topology overview](https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/BusNetwork.svg/640px-BusNetwork.svg.png)
 
 Source: Wikimedia Commons, public domain. This is a simple way to visualize the shared CAN bus concept used between the host, adapter, and ODrive nodes.
 
 ![Trapezoidal velocity profile](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jerk_loi_mouvement_vitesse_trapezoidale.svg/500px-Jerk_loi_mouvement_vitesse_trapezoidale.svg.png)
 
 Source: Wikimedia Commons, CC BY-SA 3.0. This helps explain why the current position setup uses trap trajectory instead of a raw position step.
+
+If your Markdown renderer does not display remote SVG images, open the links directly in a browser.
 
 ## Workspace Layout
 
@@ -223,26 +225,20 @@ In other words, `encode_set_input_pos()`, CAN IDs, and telemetry decoding can st
 
 ## Native Driver Note
 
-The copied vendor bundle currently includes:
+This workspace now includes the Ginkgo vendor libraries for:
 
-- Windows libraries
-- macOS libraries
+- Linux
+- Windows
+- macOS
 
-It does not currently include the Linux `libGinkgo_Driver.so` binary in the copied source tree.
-
-If you want to use this workspace on Linux with the Ginkgo adapter, add the required vendor files under:
+The Linux native files are expected at:
 
 ```text
 ros2_ws/src/ginkgo_odrive_bridge/Python_USB_CAN_Test_64bits/lib/linux/64bit/
-```
-
-and, if needed:
-
-```text
 ros2_ws/src/ginkgo_odrive_bridge/Python_USB_CAN_Test_64bits/lib/linux/32bit/
 ```
 
-The standalone tools already emit a clearer error if that Linux native library is missing.
+The standalone tools can discover the vendor folder there automatically.
 
 ## Key Files to Open First
 

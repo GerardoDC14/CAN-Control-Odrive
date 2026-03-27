@@ -38,5 +38,7 @@ python3 ginkgo_tools/ginkgo_motor_tester.py
 - Start with small position commands.
 - `position_step_test.py` works in ODrive turns, not radians.
 - The GUI now uses `PyQt6`, so it needs that package installed in your Python environment.
+- In this standalone workspace, the Ginkgo Linux native libraries live under
+  `ros2_ws/src/ginkgo_odrive_bridge/Python_USB_CAN_Test_64bits/lib/linux/`.
 - On Linux, use your udev permissions first. Add `--require-linux-root` only if you still need `sudo`.
 - If the vendor folder is moved, set `GINKGO_VENDOR_DIR` before running the scripts.
